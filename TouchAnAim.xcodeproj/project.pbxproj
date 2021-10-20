@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB6150DE272039A2007A6B56 /* LinksClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6150DD272039A2007A6B56 /* LinksClient.swift */; };
+		AB6150E027203D46007A6B56 /* LinksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6150DF27203D46007A6B56 /* LinksResponse.swift */; };
+		AB6150E227203F30007A6B56 /* LinksModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6150E127203F30007A6B56 /* LinksModelController.swift */; };
+		AB6150E4272045DF007A6B56 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6150E3272045DF007A6B56 /* LinksModel.swift */; };
 		ABBC10ED271DBB3E006B0657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC10EC271DBB3E006B0657 /* AppDelegate.swift */; };
 		ABBC10EF271DBB3E006B0657 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC10EE271DBB3E006B0657 /* SceneDelegate.swift */; };
 		ABBC10F1271DBB3E006B0657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBC10F0271DBB3E006B0657 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB6150DD272039A2007A6B56 /* LinksClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksClient.swift; sourceTree = "<group>"; };
+		AB6150DF27203D46007A6B56 /* LinksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksResponse.swift; sourceTree = "<group>"; };
+		AB6150E127203F30007A6B56 /* LinksModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModelController.swift; sourceTree = "<group>"; };
+		AB6150E3272045DF007A6B56 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
 		ABBC10E9271DBB3E006B0657 /* TouchAnAim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchAnAim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBC10EC271DBB3E006B0657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABBC10EE271DBB3E006B0657 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				ABBC1109271DCBE2006B0657 /* Aims.swift */,
+				AB6150DD272039A2007A6B56 /* LinksClient.swift */,
+				AB6150DF27203D46007A6B56 /* LinksResponse.swift */,
+				AB6150E127203F30007A6B56 /* LinksModelController.swift */,
+				AB6150E3272045DF007A6B56 /* LinksModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,7 +206,11 @@
 				ABBC110C271DD75C006B0657 /* CustomViewController.swift in Sources */,
 				ABBC10F1271DBB3E006B0657 /* ViewController.swift in Sources */,
 				ABBC10ED271DBB3E006B0657 /* AppDelegate.swift in Sources */,
+				AB6150DE272039A2007A6B56 /* LinksClient.swift in Sources */,
+				AB6150E027203D46007A6B56 /* LinksResponse.swift in Sources */,
 				ABBC110A271DCBE2006B0657 /* Aims.swift in Sources */,
+				AB6150E4272045DF007A6B56 /* LinksModel.swift in Sources */,
+				AB6150E227203F30007A6B56 /* LinksModelController.swift in Sources */,
 				ABBC10EF271DBB3E006B0657 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

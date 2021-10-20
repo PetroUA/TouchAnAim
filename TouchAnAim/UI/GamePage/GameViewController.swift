@@ -11,14 +11,15 @@ class GameViewController: UIViewController {
     
     let numberOfRows = 7
     let numberOfColumns = 7
-    let winerURL = URL(string: "https://www.google.com.ua/")
-    let louserURL = URL(string: "https://www.youtube.com/")
     let aims = Aims()
     let defaults = UserDefaults.standard
     
     var timer: Timer?
+    var linksModel: LinksModel?
     var timeLeft = 7
     var aimsLocationArray: [UIButton] = []
+    
+    lazy var linksModelController = LinksModelController()
     
     @IBOutlet weak var timerlLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
@@ -26,7 +27,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        linksModelController.delegate = self
         aims.delegate = self
+        linksModelController.getLinks()
         
         for _ in 0 ..< numberOfRows {
             var rowButtons: [UIButton] = []
@@ -97,15 +100,21 @@ class GameViewController: UIViewController {
     }
     
     func showWebSite (winer: Bool) {
-        var url = louserURL
+        var url = URL(string: linksModel!.louserLink)
         if winer {
-            url = winerURL
+            url = URL(string: linksModel!.winerLink)
         }
         let customViewController = CustomViewController.init()
         customViewController.URL = url
         self.navigationController?.pushViewController(customViewController, animated: true)
     }
     
+}
+
+extension GameViewController: LinksModelControllerDelegate {
+    func updateLinksResault(_ linksModel: LinksModel) {
+        self.linksModel = linksModel
+    }
 }
 
 extension GameViewController: AimsDelegate{
